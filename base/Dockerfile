@@ -88,7 +88,7 @@ RUN groupadd --gid 3434 riscvuser \
     && echo 'Defaults    env_keep += "DEBIAN_FRONTEND"' >> /etc/sudoers.d/env_keep
 
 # Install Maven Version: 3.6.0
-RUN curl --silent --show-error --location --fail --retry 3 --output /tmp/apache-maven.tar.gz https://www.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz   && tar xf /tmp/apache-maven.tar.gz -C /opt/   && rm /tmp/apache-maven.tar.gz   && ln -s /opt/apache-maven-* /opt/apache-maven   && /opt/apache-maven/bin/mvn -version
+RUN curl --silent --show-error --location --fail --retry 3 --output /tmp/apache-maven.tar.gz https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz && tar xf /tmp/apache-maven.tar.gz -C /opt/ && rm /tmp/apache-maven.tar.gz && ln -s /opt/apache-maven-* /opt/apache-maven && /opt/apache-maven/bin/mvn -version
 
 # Install Ant Version: 1.10.5
 RUN curl --silent --show-error --location --fail --retry 3 --output /tmp/apache-ant.tar.gz https://archive.apache.org/dist/ant/binaries/apache-ant-1.10.5-bin.tar.gz   && tar xf /tmp/apache-ant.tar.gz -C /opt/   && ln -s /opt/apache-ant-* /opt/apache-ant   && rm -rf /tmp/apache-ant.tar.gz   && /opt/apache-ant/bin/ant -version
