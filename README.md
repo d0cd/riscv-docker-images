@@ -39,7 +39,7 @@ sudo build_docker_images.sh TAG_NUMBER
 
 This will build **all** the docker images in the repository as well as create an updated version of final docker images (the ones 
 in `images`) with the `TAG_NUMBER` specified. The final images created out of this command will be labeled as
-`ucbbar/riscv-docker-images:ROCKETCHIP_VERSION_HASH-VERILATOR_VERSION_NUMBER-TAG_NUMBER`
+`ucbbar/riscv-docker-images:RISCVTOOLS_VERSION_HASH-VERILATOR_VERSION_NUMBER-TAG_NUMBER`
 
 More tools...
 -------------
