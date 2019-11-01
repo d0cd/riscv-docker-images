@@ -24,6 +24,9 @@ hash and version of **Verilator** that they use. In summary the directory heirar
     - `VERILATOR_VERSION_NUMBER`
 - `images` - build various combinations of the above tools/items
     - `RISCVTOOLS_VERSION_HASH-VERILATOR_VERSION_NUMBER`
+- `rocket` - add rocket source on top of versions of images
+    - `ROCKETCHIP_VERSION_HASH-ROCKETTOOLS_VERSION_HASH-VERILATOR_VERSION_NUMBER`
+
 
 How to build
 ------------
